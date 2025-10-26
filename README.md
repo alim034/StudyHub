@@ -105,6 +105,8 @@ studyhub-project-root/
     ├── index.js        # Main entry point for the signaling server
     └── package.json
 
+```
+
 🚀 Getting Started Locally
 
 To run StudyHub on your local machine, follow these steps:
