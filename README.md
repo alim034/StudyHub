@@ -11,18 +11,31 @@ Live Demo: Visit StudyHub Live! https://study-hub-frontend-ebon.vercel.app/
 
 StudyHub offers a rich set of features to enhance the learning experience:
 👤 Authentication: Secure user registration and login with JWT. Password reset via email.
+
 🤝 Collaborative Rooms: Create and join study rooms for focused group work.
+
 📅 Event Scheduling: Integrated calendar to schedule study sessions, deadlines, and events within rooms.
+
 📝 Notes & Comments: Rich-text note-taking with commenting features for feedback.
+
 ✅ Task Management: Assign and track tasks within study rooms.
+
 📹 Real-Time Video Chat: Integrated WebRTC video conferencing for face-to-face collaboration.
+
 💡 Interactive Whiteboard: Real-time whiteboard for brainstorming and visual explanations.
+
 📚 Resource Sharing: Upload and share study materials (notes, links, videos) within rooms.
+
 💬 Community Forum: A space for broader discussions, questions, and announcements (if implemented).
+
 📧 Contact Form: Allow users to send messages directly to the admin/support.
+
 🔍 Search: Functionality to search across notes, resources, or users.
+
 🖼️ Profile Management: Update user profiles and avatars.
+
 ⚙️ Background Jobs: Automated tasks like reminders or cleanup (e.g., invitation cleanup).
+
 
 🛠️ Tech Stack
 
@@ -147,7 +160,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 👤 Author
 Mohammad Alim 
 
-GitHub: @alim034  (https://github.com/alim034)
+GitHub: @alim034  https://github.com/alim034
 LinkedIn: Your LinkedIn Profile https://www.linkedin.com/in/mohammad-alim-7a8a52289/
 📜 License
 This project is licensed under the MIT License. 
