@@ -106,6 +106,7 @@ studyhub-project-root/
     └── package.json
 
 ```
+---
 
 🚀 Getting Started Locally
 
