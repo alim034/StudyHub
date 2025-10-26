@@ -1,4 +1,4 @@
-# StudyHub 🚀 - Your Collaborative Learning Platform
+StudyHub 🚀 - Your Collaborative Learning Platform
 
 
 StudyHub is a modern, full-stack web application designed to empower students by providing a seamless platform for collaborative learning, resource sharing, and real-time interaction.
@@ -10,6 +10,7 @@ Live Demo: Visit StudyHub Live! https://study-hub-frontend-ebon.vercel.app/
 ✨ Features
 
 StudyHub offers a rich set of features to enhance the learning experience:
+
 👤 Authentication: Secure user registration and login with JWT. Password reset via email.
 
 🤝 Collaborative Rooms: Create and join study rooms for focused group work.
@@ -36,37 +37,56 @@ StudyHub offers a rich set of features to enhance the learning experience:
 
 ⚙️ Background Jobs: Automated tasks like reminders or cleanup (e.g., invitation cleanup).
 
-
 🛠️ Tech Stack
 
 This project leverages modern web technologies:
 
 Frontend:
+
 React (with Vite)
+
 Tailwind CSS
+
 Framer Motion (for animations)
+
 Lucide Icons
+
 Socket.IO Client
+
 Axios
 
 Backend (API):
+
 Node.js
+
 Express.js
+
 MongoDB (with Mongoose)
+
 JWT (JSON Web Tokens) for authentication
+
 Nodemailer (for emails like password reset, contact form)
+
 Multer (for file uploads)
 
 Signaling Server (WebRTC):
+
 Node.js
+
 Socket.IO
+
 Express.js
+
 Database:
+
 MongoDB Atlas
 
 Deployment:
+
 Frontend: Vercel
+
 Backend (API): Vercel
+
 Signaling Server: Render
 
 Domain: Name.com (or your provider)
@@ -86,6 +106,7 @@ studyhub-project-root/
 │   ├── .env            # Environment variables (GITIGNORED!)
 │   ├── server.js       # Main entry point for the backend API
 │   └── package.json
+│
 ├── frontend/
 │   ├── public/
 │   ├── src/
@@ -101,6 +122,7 @@ studyhub-project-root/
 │   ├── .env            # Environment variables (GITIGNORED!)
 │   ├── index.html      # Main HTML file
 │   └── package.json
+│
 └── signaling-server/
     ├── .env            # Environment variables (GITIGNORED!)
     ├── index.js        # Main entry point for the signaling server
@@ -109,46 +131,65 @@ studyhub-project-root/
 
 (Note: This is a representative structure; your exact subfolders might differ slightly.)
 
-
-
 🚀 Getting Started Locally
 
 To run StudyHub on your local machine, follow these steps:
+
 1. Clone the Repository:
+
 git clone <your-repository-url>
 cd <repository-folder>
 
+
 2. Setup Backend:
+
 cd backend
 npm install
 
-# Create a .env file in the backend/ directory and add the necessary variables (see below)
-npm run dev # Starts the backend server (usually on port 5001)
 
+Create a .env file in the backend/ directory and add the necessary variables (see section below).
+
+npm run dev
+
+
+This starts the backend server (usually on port 5001).
 
 3. Setup Signaling Server:
+
 cd ../signaling-server
 npm install
 
-# Create a .env file in the signaling-server/ directory (see below)
-npm start # Starts the signaling server (usually on port 3001 or 8000)
 
+Create a .env file in the signaling-server/ directory (see section below).
+
+npm start
+
+
+This starts the signaling server (usually on port 3001 or 8000).
 
 4. Setup Frontend:
+
 cd ../frontend
 npm install
 
-# Create a .env file in the frontend/ directory (see below)
-npm run dev # Starts the frontend development server (usually on port 5173)
 
+Create a .env file in the frontend/ directory (see section below).
+
+npm run dev
+
+
+This starts the frontend development server (usually on port 5173).
 
 5. Access the Application:
+
 Open your browser and navigate to http://localhost:5173.
 
 ⚙️ Environment Variables
+
 You need to create .env files in each of the backend, frontend, and signaling-server directories. Do not commit these files to Git.
 
 backend/.env:
+
 MONGO_URI=<your_mongodb_atlas_connection_string>
 PORT=5001
 JWT_SECRET_KEY=<your_strong_jwt_secret>
@@ -165,35 +206,43 @@ CONTACT_EMAIL=<email_address_to_receive_contact_form_submissions>
 
 
 signaling-server/.env:
+
 PORT=8000 # Or the port your signaling server uses
 CORS_ORIGIN=http://localhost:5173 # Frontend URL for CORS
 
 # Optional: If you integrated backend calls for auth
-BACKEND_URL=http://localhost:5001/api
+# BACKEND_URL=http://localhost:5001/api
+
 
 frontend/.env:
-URL for your backend API server
+
+# URL for your backend API server
 VITE_API_URL=http://localhost:5001/api
 
-URL for your signaling server
+# URL for your signaling server
 VITE_SOCKET_URL=http://localhost:8000 # Match the signaling server port
 
 
-Note: For production deployment, replace localhost URLs with your deployed Vercel and Render URLs.
+Note: For production deployment, replace localhost URLs with your deployed Vercel and Render URLs in the environment variables and in your deployment service settings (Vercel/Render dashboards).
 
 ☁️ Deployment
-The Frontend and Backend API are deployed on Vercel. Vercel handles CI/CD from the connected GitHub repository. Remember to set the environment variables in the Vercel project settings. The backend requires a vercel.json file for proper routing and CORS headers.
+
+The Frontend and Backend API are deployed on Vercel. Vercel handles CI/CD from the connected GitHub repository. Remember to set the environment variables in the Vercel project settings for both projects. The backend requires a vercel.json file for proper routing and CORS headers.
+
 The Signaling Server requires a persistent connection (WebSocket) and is deployed on Render as a Web Service. Remember to set environment variables in Render.
 
 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page. (Replace <your-repo-url> with the actual URL)
 
 👤 Author
-Mohammad Alim 
 
-GitHub: @alim034  https://github.com/alim034
+Mohammad Alim Mohammad Mobin
 
-LinkedIn: Your LinkedIn Profile https://www.linkedin.com/in/mohammad-alim-7a8a52289/
+GitHub: @alim034
+
+LinkedIn: Mohammad Alim
 
 📜 License
-This project is licensed under the MIT License. 
+
+This project is licensed under the MIT License. (Optional: Create a LICENSE file in your root directory containing the MIT License text)
