@@ -217,7 +217,7 @@ Feel free to check the Issues Page
 **Mohammad Alim **
 
 - 🧑‍💻 [GitHub: @alim034](https://github.com/alim034)
-- 💼 [LinkedIn: Mohammad Alim](https://www.linkedin.com/in/mohammad-alim)
+- 💼 [LinkedIn: Mohammad Alim]([https://www.linkedin.com/in/mohammad-alim](https://www.linkedin.com/in/mohammad-alim-7a8a52289/))
 
 
 This project is licensed under the MIT License.
