@@ -1,4 +1,4 @@
-StudyHub 🚀 - Your Collaborative Learning Platform
+# StudyHub 🚀 - Your Collaborative Learning Platform
 
 
 StudyHub is a modern, full-stack web application designed to empower students by providing a seamless platform for collaborative learning, resource sharing, and real-time interaction.
