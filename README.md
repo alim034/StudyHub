@@ -212,14 +212,12 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the Issues Page
  (replace with your actual repo URL).
 
-👤 Author
+## 👤 Author
 
-Mohammad Alim Mohammad Mobin
+**Mohammad Alim **
 
-🧑‍💻 GitHub: @alim034
+- 🧑‍💻 [GitHub: @alim034](https://github.com/alim034)
+- 💼 [LinkedIn: Mohammad Alim](https://www.linkedin.com/in/mohammad-alim)
 
-💼 LinkedIn: Mohammad Alim
-
-📜 License
 
 This project is licensed under the MIT License.
