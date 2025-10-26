@@ -137,14 +137,14 @@ CONTACT_EMAIL=<email_address_to_receive_contact_form_submissions>
 signaling-server/.env:
 PORT=8000 # Or the port your signaling server uses
 CORS_ORIGIN=http://localhost:5173 # Frontend URL for CORS
-# Optional: If you integrated backend calls for auth
-# BACKEND_URL=http://localhost:5001/api
 
+# Optional: If you integrated backend calls for auth
+BACKEND_URL=http://localhost:5001/api
 
 frontend/.env:
-# URL for your backend API server
+URL for your backend API server
 VITE_API_URL=http://localhost:5001/api
-# URL for your signaling server
+URL for your signaling server
 VITE_SOCKET_URL=http://localhost:8000 # Match the signaling server port
 
 
