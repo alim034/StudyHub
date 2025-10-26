@@ -75,10 +75,40 @@ Domain: Name.com (or your provider)
 
 The repository is organized into three main parts:
 
-/
-├── backend/          # Node.js/Express API Server (handles data, auth, business logic)
-├── frontend/         # React/Vite Client Application (the user interface)
-└── signaling-server/ # Node.js/Socket.IO Server (manages WebRTC signaling for video chat)
+studyhub-project-root/
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routes/
+│   ├── jobs/           # Optional background jobs
+│   ├── .env            # Environment variables (GITIGNORED!)
+│   ├── server.js       # Main entry point for the backend API
+│   └── package.json
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── api/        # API call wrappers
+│   │   ├── assets/     # Images, logos, etc.
+│   │   ├── components/ # Reusable UI components
+│   │   ├── context/    # React Context (e.g., AuthContext)
+│   │   ├── hooks/      # Custom React hooks
+│   │   ├── pages/      # Page-level components
+│   │   ├── styles/     # Global styles (if needed beyond Tailwind)
+│   │   ├── App.jsx     # Main application component
+│   │   └── main.jsx    # Entry point for React rendering
+│   ├── .env            # Environment variables (GITIGNORED!)
+│   ├── index.html      # Main HTML file
+│   └── package.json
+└── signaling-server/
+    ├── .env            # Environment variables (GITIGNORED!)
+    ├── index.js        # Main entry point for the signaling server
+    └── package.json
+
+
+(Note: This is a representative structure; your exact subfolders might differ slightly.)
+
 
 
 🚀 Getting Started Locally
@@ -144,6 +174,7 @@ BACKEND_URL=http://localhost:5001/api
 frontend/.env:
 URL for your backend API server
 VITE_API_URL=http://localhost:5001/api
+
 URL for your signaling server
 VITE_SOCKET_URL=http://localhost:8000 # Match the signaling server port
 
@@ -161,6 +192,8 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 Mohammad Alim 
 
 GitHub: @alim034  https://github.com/alim034
+
 LinkedIn: Your LinkedIn Profile https://www.linkedin.com/in/mohammad-alim-7a8a52289/
+
 📜 License
 This project is licensed under the MIT License. 
